@@ -30,6 +30,5 @@ describe 'Player' do
     expect(player.name).to eq 'Jack'
     end
   end
-  
 
 end
