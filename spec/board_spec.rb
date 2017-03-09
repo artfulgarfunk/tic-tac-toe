@@ -27,4 +27,24 @@ describe "Board" do
     end
   end
 
+  context "#get_cell" do
+    it "returns the cell when given x,y coordinates" do
+      grid = [["","",""],["","","a thing"],["","",""]]
+      b = Board.new(grid: grid)
+      expect(b.get_cell(2,1)).to eq "a thing"
+    end
+  end
+
+  context "#set_cell" do
+    it "changes the state of a cell when give x,y coordinates" do
+      grid = [["","",""],["","","a thing"],["","",""]]
+      b = Board.new(grid: grid)
+      b.set_cell(2,2,'possum')
+      expect(b.get_cell(2,2)).to eq 'possum'
+    end
+  end
+
+
+
+
 end
