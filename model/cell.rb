@@ -1,9 +1,9 @@
-class Cell
+ class Cell
 
-  attr_accessor :state
+   attr_accessor :state
 
-  def initialize
-    @state = nil
-  end
+   def initialize(state = '')
+     @state = state
+   end
 
 end
